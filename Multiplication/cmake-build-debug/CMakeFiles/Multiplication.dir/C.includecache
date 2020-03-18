@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/yoann/Desktop/C/Multiplication/Multiplication.c
+time.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+signal.h
+-
+
