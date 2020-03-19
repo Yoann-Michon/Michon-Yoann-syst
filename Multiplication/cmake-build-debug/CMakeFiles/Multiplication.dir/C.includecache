@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/yoann/Desktop/C/Multiplication/Multiplication.c
+C:/Users/yoann/Desktop/C/rac_syst/Michon-Yoann-syst/Multiplication/multiplication.c
 time.h
 -
 stdio.h
@@ -16,5 +16,7 @@ stdlib.h
 unistd.h
 -
 signal.h
+-
+errno.h
 -
 

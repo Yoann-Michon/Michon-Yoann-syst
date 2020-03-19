@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Multiplication.dir/Multiplication.c.obj"
+  "CMakeFiles/Multiplication.dir/multiplication.c.obj"
   "Multiplication.exe"
   "Multiplication.exe.manifest"
   "Multiplication.pdb"
