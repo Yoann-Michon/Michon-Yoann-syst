@@ -32,11 +32,11 @@ function division(){
     }
 }
 
-function power(x, n){
+function puissance(x, n){
     if (n == 0){
         return 1;
     }else{
-        return x = x*power(x,n-1);
+        return x = x*puissance(x,n-1);
     }
 }
-console.log("5 Puissance 2 : " + power(5,2));
+console.log("5 Puissance 2 : " + puissance(5,2));
