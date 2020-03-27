@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Ville" targetName="Ville" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db168c93-93b5-42a1-a26a-0be6a6be0c48" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/JS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ls/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ls/.idea/Ls.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ville.h" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\yoann\Desktop\C\rac_syst\Michon-Yoann-syst\Ville\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zd3FD9qBiwmCih1Aig55l1zr6k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Ville" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ville" TARGET_NAME="Ville" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ville" RUN_TARGET_NAME="Ville">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db168c93-93b5-42a1-a26a-0be6a6be0c48" name="Default Changelist" comment="" />
+      <created>1585155037714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585155037714</updated>
+      <workItem from="1585155041257" duration="244000" />
+      <workItem from="1585155287973" duration="845000" />
+    </task>
+    <task id="LOCAL-00001" summary="traitement ville">
+      <created>1585155420255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585155420256</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="traitement ville" />
+    <option name="LAST_COMMIT_MESSAGE" value="traitement ville" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585155240693">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="0" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1585155240693" />
+    <state x="16" y="27" key="CommitChangelistDialog2" timestamp="1585155419215">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="16" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585155419215" />
+    <state x="280" y="194" key="EnvironmentVariablesDialog" timestamp="1585155220203">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="280" y="194" key="EnvironmentVariablesDialog/0.0.1536.864@0.0.1536.864" timestamp="1585155220203" />
+    <state x="325" y="173" key="FileChooserDialogImpl" timestamp="1585155276001">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="325" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585155276001" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1585155283503">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.0.1536.864@0.0.1536.864" timestamp="1585155283503" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1585155283503">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.0.1536.864@0.0.1536.864" timestamp="1585155283503" />
+    <state x="88" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1585155043037">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="88" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585155043037" />
+  </component>
+</project>

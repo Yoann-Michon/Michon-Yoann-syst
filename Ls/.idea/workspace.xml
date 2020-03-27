@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Ls" targetName="Ls" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4b56d74c-9e81-4005-aacc-383001920b1d" name="Default Changelist" comment="1er essais">
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/JS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JS/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\yoann\Desktop\C\rac_syst\Michon-Yoann-syst\Ls\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZWQbX5KT0s1Ggzac4NjWonVcZR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Ls" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ls" TARGET_NAME="Ls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ls" RUN_TARGET_NAME="Ls">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b56d74c-9e81-4005-aacc-383001920b1d" name="Default Changelist" comment="" />
+      <created>1584952441600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584952441600</updated>
+      <workItem from="1584952450233" duration="2071000" />
+      <workItem from="1585081070250" duration="94000" />
+      <workItem from="1585153679997" duration="1270000" />
+    </task>
+    <task id="LOCAL-00001" summary="1er essais">
+      <created>1584954374658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584954374658</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ls">
+      <created>1585154599965</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585154599965</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1er essais" />
+    <MESSAGE value="ls" />
+    <option name="LAST_COMMIT_MESSAGE" value="ls" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="107" y="44" key="CommitChangelistDialog2" timestamp="1585154599032">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="107" y="44" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585154599032" />
+    <state x="0" y="86" key="DiffContextDialog" timestamp="1584953320574">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="0" y="86" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1584953320574" />
+    <state x="317" y="195" key="FileChooserDialogImpl" timestamp="1585081163297">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="317" y="195" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585081163297" />
+    <state width="723" height="229" key="GridCell.Tab.0.bottom" timestamp="1585154950799">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="723" height="229" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585154950799" />
+    <state width="723" height="229" key="GridCell.Tab.0.center" timestamp="1585154950799">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="723" height="229" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585154950799" />
+    <state width="723" height="229" key="GridCell.Tab.0.left" timestamp="1585154950798">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="723" height="229" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585154950798" />
+    <state width="723" height="229" key="GridCell.Tab.0.right" timestamp="1585154950799">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="723" height="229" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585154950799" />
+    <state x="233" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1585081075577">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="233" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585081075577" />
+  </component>
+</project>
