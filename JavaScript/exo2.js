@@ -1,9 +1,23 @@
 'use strict';
-
-function Multiplication(a,b){
-    let s = (a,b) =>a*b;
+//2.1
+function creerMultiplicateur(n){
+    return (x) => x* n;
 }
 
-function creerMultiplicateur(n,Multiplication){
-    return Multiplication(x,n);
+//2.2
+function creerSequence(init,step){
+    step=init;
+    let i;
+    for (i=0;i<5;i++){
+        step;
+    }
 }
+
+//2.3
+function fibonacci(nbr) {
+    if(nbr < 2){
+        return nbr;
+    }
+    return fibonacci(nbr - 1) + fibonacci(nbr - 2);
+}
+console.log(fibonacci(8));
