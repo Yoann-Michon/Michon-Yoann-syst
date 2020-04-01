@@ -88,7 +88,7 @@ Liste fichier(){
     }
 
     while (fscanf(f,"%s %d",nom, &codep) != EOF){
-        fscanf(f,"%s",nom);
+       l=liste_queueinserer(l,codep);
     }
     fclose(f);
     return l;
