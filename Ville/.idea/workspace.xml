@@ -12,15 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db168c93-93b5-42a1-a26a-0be6a6be0c48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JS/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JS/.idea/JS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JS/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JS/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JS/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ls/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ls/.idea/Ls.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ville.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +50,16 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://arche.univ-lorraine.fr/pluginfile.php/1291871/mod_resource/content/1/codes.txt" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yoann\Desktop\C\rac_syst\Michon-Yoann-syst\Ville" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Ville" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Ville" TARGET_NAME="Ville" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Ville" RUN_TARGET_NAME="Ville">
@@ -80,6 +80,8 @@
       <updated>1585155037714</updated>
       <workItem from="1585155041257" duration="244000" />
       <workItem from="1585155287973" duration="845000" />
+      <workItem from="1585751321686" duration="5261000" />
+      <workItem from="1585820591830" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="traitement ville">
       <created>1585155420255</created>
@@ -88,7 +90,28 @@
       <option name="project" value="LOCAL" />
       <updated>1585155420256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="liste des villes">
+      <created>1585752312322</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585752312322</updated>
+    </task>
+    <task id="LOCAL-00003" summary="liste des villes">
+      <created>1585756483038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585756483038</updated>
+    </task>
+    <task id="LOCAL-00004" summary="liste des villes">
+      <created>1585756586049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585756586049</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,17 +119,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="traitement ville" />
-    <option name="LAST_COMMIT_MESSAGE" value="traitement ville" />
+    <MESSAGE value="liste des villes" />
+    <option name="LAST_COMMIT_MESSAGE" value="liste des villes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="20" y="91" key="#HTTP_Proxy" timestamp="1585751892443">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="20" y="91" key="#HTTP_Proxy/0.0.1536.864@0.0.1536.864" timestamp="1585751892443" />
     <state x="0" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585155240693">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="0" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1585155240693" />
-    <state x="16" y="27" key="CommitChangelistDialog2" timestamp="1585155419215">
+    <state x="16" y="27" key="CommitChangelistDialog2" timestamp="1585756584966">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="16" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585155419215" />
+    <state x="16" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585756584966" />
     <state x="280" y="194" key="EnvironmentVariablesDialog" timestamp="1585155220203">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -123,9 +151,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.0.1536.864@0.0.1536.864" timestamp="1585155283503" />
-    <state x="88" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1585155043037">
+    <state x="88" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1585820610351">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="88" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585155043037" />
+    <state x="88" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585820610351" />
   </component>
 </project>

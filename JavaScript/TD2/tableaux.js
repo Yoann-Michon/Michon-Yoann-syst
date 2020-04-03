@@ -9,6 +9,14 @@ function range(a, b){
     }
     return tab;
 }
-
-console.log('de 1 à 5 : '+ range(1,5));
+console.log("de 1 à 5 : "+ range(1,5));
 console.log("de 1 à 5 : "+ range(5,1));
+
+function sum(tab){
+    let somme=0;
+    for (let i=0;i<tab.length;i++){
+        somme+=tab[i];
+    }
+    return somme;
+}
+console.log("tab[1,2,3] = 6 : "+ sum([1,2,3]));
