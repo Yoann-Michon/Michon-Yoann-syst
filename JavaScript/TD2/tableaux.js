@@ -1,5 +1,5 @@
 'use strict';
-
+//1.1
 function range(a, b){
     let tab=[];
     let min=Math.min(a,b);
@@ -12,6 +12,7 @@ function range(a, b){
 console.log("de 1 à 5 : "+ range(1,5));
 console.log("de 1 à 5 : "+ range(5,1));
 
+//1.2
 function sum(tab){
     let somme=0;
     for (let i=0;i<tab.length;i++){
