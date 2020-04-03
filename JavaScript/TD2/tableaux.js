@@ -21,3 +21,16 @@ function sum(tab){
     return somme;
 }
 console.log("tab[1,2,3] = 6 : "+ sum([1,2,3]));
+
+function sum2(tab){
+    let somme=0;
+    tab.forEach(somme+=tab[i]);
+    return somme;
+}
+console.log("tab[1,2,3] = 6 : "+ sum2([1,2,3]));
+
+function sum3(tab){
+    let somme=(accumulator, currentValue) => accumulator + currentValue;
+    return tab.reduce(somme);
+}
+console.log("tab[1,2,3] = 6 : "+ sum3([1,2,3]));
