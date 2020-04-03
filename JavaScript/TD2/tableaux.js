@@ -24,7 +24,7 @@ console.log("tab[1,2,3] = 6 : "+ sum([1,2,3]));
 
 function sum2(tab){
     let somme=0;
-    tab.forEach(somme+=tab[i]);
+    tab.forEach(tab=>somme+=tab);
     return somme;
 }
 console.log("tab[1,2,3] = 6 : "+ sum2([1,2,3]));
