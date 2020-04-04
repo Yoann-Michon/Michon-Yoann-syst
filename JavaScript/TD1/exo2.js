@@ -1,19 +1,19 @@
 'use strict';
 //2.1
-/*
+
 function creerMultiplicateur(n){
     return (x) => x* n;
-}*/
+}
 
 //2.2
-/*function creerSequence(init,step){
+function creerSequence(init,step){
     init -= step;
     return () => init += step
 }
 let sequence = creerSequence(0, 2);
 console.log("Séquence init 0, step 2 :");
 console.log(sequence());
-console.log(sequence());*/
+console.log(sequence());
 
 //2.3
 /*fonction qui permet de parcourir la suite de fibonacci*/
