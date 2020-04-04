@@ -1,21 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "ville.h"
 
-/* Initialisation d'une liste */
-Liste liste_initialiser()
-{
-    return(NULL);
-}
-
-/* Test si une liste est vide */
-int liste_vide(Liste l)
-{
-    return (l == NULL);
-}
 
 /* Ajout d'un élément en tête de liste */
-Liste liste_teteinserer(Liste l, int e)
+Liste liste_teteinserer(Liste l, int e, char nom[TAILLE_NOM])
 {
     Liste p;
 
@@ -26,6 +16,7 @@ Liste liste_teteinserer(Liste l, int e)
     }
     p->codep = e;
     p->suc = l;
+    strcpy(p->nom,nom);
 
     return (p);
 }
@@ -42,20 +33,20 @@ void liste_afficher(Liste l){
 
 
 // Libère de la mémoire
-/*Liste liste_liberer(Liste l){
+Liste liste_liberer(Liste l){
     while (l){
         l=liste_tetesupprimer(l);
     }
     return l;
-}*/
+}
 
-Liste liste_queueinserer(Liste l, int e){
+Liste liste_queueinserer(Liste l, int e, char nom[TAILLE_NOM]){
     Liste p;
     Liste tete=l;
     p = (Liste) malloc(sizeof(Ville));
 
-    if (liste_vide(l))/*si l est vide*/
-        return liste_teteinserer(l,e);
+    if (l)/*si l est vide*/
+        return liste_teteinserer(l,e,nom);
 
     if (p == NULL){
         printf("Allocation impossible...\n");
@@ -64,16 +55,31 @@ Liste liste_queueinserer(Liste l, int e){
 
     p->codep = e;
     p->suc = NULL;
+    strcpy(p->nom,nom);
 
     while (l->suc) {/*tant que suc != NULL*/
         l=l->suc;/*permet d'avancer dans la liste*/
+        /*si l->suc ==NULL alors*/
+        l->suc=p;
     }
-    /*si l->suc ==NULL alors*/
-    l->suc=p;
+
     return tete;
 }
 
-Liste fichier(){
+/* Suppression d'un élément en tête de liste */
+Liste liste_tetesupprimer(Liste l)
+{
+    Liste p = NULL;
+
+    if (!l) {
+        p = l->suc;
+        free(l);
+    }
+
+    return (p) ;
+}
+
+Liste ouverture_fichier(){
     Liste l = NULL;
     char nom[TAILLE_NOM];
     int codep;
@@ -88,7 +94,7 @@ Liste fichier(){
     }
 
     while (fscanf(f,"%s %d",nom, &codep) != EOF){
-       l=liste_queueinserer(l,codep);
+       l=liste_queueinserer(l,codep,nom);
     }
     fclose(f);
     return l;

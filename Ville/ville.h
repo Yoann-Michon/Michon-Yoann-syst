@@ -16,16 +16,17 @@ typedef struct V {
 } Ville;
 typedef struct V *Liste;
 
-Liste liste_initialiser();
 
-int liste_vide(Liste l);
+Liste liste_teteinserer(Liste l, int e, char nom[TAILLE_NOM]);
 
-Liste liste_teteinserer(Liste l, int e);
+Liste liste_queueinserer(Liste l, int e, char nom[TAILLE_NOM]);
 
-Liste liste_queueinserer(Liste l, int e);
+Liste ouverture_fichier();
 
 void liste_afficher(Liste l);
 
 Liste liste_liberer(Liste l);
+
+Liste liste_tetesupprimer(Liste l);
 
 #endif //VILLE_VILLE_H
