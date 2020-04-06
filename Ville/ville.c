@@ -21,10 +21,12 @@ Liste liste_teteinserer(Liste l, int e, char nom[TAILLE_NOM])
     return (p);
 }
 
-/* Affichage de liste */
-void liste_afficher(Liste l){
+/* Affichage de la liste */
+void liste_afficher(Liste l, int e){
     while (l != NULL) {
-        printf("%d\n",l->codep);
+        if (l->codep==e){
+            printf("%d : %s\n",l->codep,l->nom);
+        }
         l=l->suc;
     }
     printf("\n");
@@ -59,9 +61,8 @@ Liste liste_queueinserer(Liste l, int e, char nom[TAILLE_NOM]){
 
     while (l->suc) {/*tant que suc != NULL*/
         l=l->suc;/*permet d'avancer dans la liste*/
-        /*si l->suc ==NULL alors*/
-        l->suc=p;
-    }
+    }/*si l->suc ==NULL alors*/
+    l->suc=p;
 
     return tete;
 }
@@ -100,3 +101,4 @@ Liste ouverture_fichier(){
     return l;
 
 }
+

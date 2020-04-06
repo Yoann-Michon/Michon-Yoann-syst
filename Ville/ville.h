@@ -23,7 +23,7 @@ Liste liste_queueinserer(Liste l, int e, char nom[TAILLE_NOM]);
 
 Liste ouverture_fichier();
 
-void liste_afficher(Liste l);
+void liste_afficher(Liste l, int e);
 
 Liste liste_liberer(Liste l);
 
