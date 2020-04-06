@@ -87,7 +87,7 @@ function pattern2(t, testFnct, transFnct){
         res.push(transFnct(a));
     }});
     return res;
-}
+}//à voir
 
 //1.6
 function pattern3(t, str){
