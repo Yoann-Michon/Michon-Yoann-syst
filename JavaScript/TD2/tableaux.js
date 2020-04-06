@@ -72,11 +72,11 @@ function pattern(t, str){
     let res=[];
     t.forEach((a)=>{if (a.includes(str))
                     {
-                      res.push(a.replace(str,str.toUpperCase()));
+                      res.push(a.toUpperCase());
                     }});
     return res;
 }
-//let tab = ['fermeture', 'voiture', 'ture', 'nomenclature'];
+//let tab = ['fermeture', 'voiture', 'ture', 'nomenclature', 'coco'];
 //console.log(pattern(tab,'ture'));
 
 //1.5
