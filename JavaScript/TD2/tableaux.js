@@ -80,8 +80,13 @@ function pattern(t, str){
 //console.log(pattern(tab,'ture'));
 
 //1.5
-function pattern2(t, testFnct, transFnct){//a faire
-
+function pattern2(t, testFnct, transFnct){
+    let res=[];
+    t.forEach((a)=>{if (testFnct(a))
+    {
+        res.push(transFnct(a));
+    }});
+    return res;
 }
 
 //1.6
@@ -100,3 +105,12 @@ function url(t){
     return tab;
 }
 //console.log("renvoie l'url de chaque produit : "+url([1,2,3,4,5]));
+
+//1.8
+function url2(t){
+    let tab=[];
+    for (let i=0; i<t.length;i++){
+        tab.push("http://www.cata.log/products/"+t[i])
+    }
+    return tab;
+}
