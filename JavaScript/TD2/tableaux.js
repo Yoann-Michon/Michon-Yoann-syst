@@ -108,9 +108,12 @@ function url(t){
 
 //1.8
 function url2(t){
-    let tab=[];
+    let html="<div class=cata><ul>";
     for (let i=0; i<t.length;i++){
-        tab.push("http://www.cata.log/products/"+t[i])
+        let ref=("http://www.cata.log/products/"+t[i]);
+        html +="\n <li><a href='"+ref+"'>"+t[i]+"</a><li>";
     }
-    return tab;
+    html+="\n</ul> </div>";
+    return html;
 }
+//console.log(url2(['downers1','uppers2','trips3','aphrodisiques4','dope5']));
