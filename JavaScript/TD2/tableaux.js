@@ -81,12 +81,7 @@ function pattern(t, str){
 
 //1.5
 function pattern2(t, testFnct, transFnct){//a faire
-    //let res=[];
-    /*t.forEach((a)=>{if (a.includes(str))
-    {
-        res.push(a.replace(str,str.toUpperCase()));
-    }});*/
-    return res;
+
 }
 
 //1.6
@@ -95,3 +90,13 @@ function pattern3(t, str){
 }
 //let tab = ['fermeture', 'voiture', 'ture', 'nomenclature', 'coco'];
 //console.log(pattern3(tab,'ture'));
+
+//1.7
+function url(t){
+    let tab=[];
+    for (let i=0; i<t.length;i++){
+        tab.push("http://www.cata.log/products/"+t[i])
+    }
+    return tab;
+}
+//console.log("renvoie l'url de chaque produit : "+url([1,2,3,4,5]));
