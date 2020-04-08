@@ -1,6 +1,6 @@
 CC = gcc
 OBJS = main.o ville.o
-CFLAGS   = -c -Wall -ansi -pedantic -g
+CFLAGS   = -c -Wall  -pedantic -g
 LDFLAGS =
 PGM = Ville
 

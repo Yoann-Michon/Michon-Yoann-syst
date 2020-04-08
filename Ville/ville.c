@@ -43,12 +43,11 @@ Liste liste_liberer(Liste l){
 }
 
 Liste liste_queueinserer(Liste l, int e, char nom[TAILLE_NOM]){
+    if (!l)return liste_teteinserer(l,e,nom);
+
     Liste p;
     Liste tete=l;
     p = (Liste) malloc(sizeof(Ville));
-
-    if (l)/*si l est vide*/
-        return liste_teteinserer(l,e,nom);
 
     if (p == NULL){
         printf("Allocation impossible...\n");
@@ -59,7 +58,7 @@ Liste liste_queueinserer(Liste l, int e, char nom[TAILLE_NOM]){
     p->suc = NULL;
     strcpy(p->nom,nom);
 
-    while (l->suc) {/*tant que suc != NULL*/
+    while (l->suc) {
         l=l->suc;/*permet d'avancer dans la liste*/
     }/*si l->suc ==NULL alors*/
     l->suc=p;
@@ -84,14 +83,16 @@ Liste ouverture_fichier(){
     Liste l = NULL;
     char nom[TAILLE_NOM];
     int codep;
+    FILE *f;
 
     /*Ouverture du ficher.txt*/
-    FILE *f = fopen("ville.txt", "r");
+    f=fopen("ville.txt", "r");
 
     /*on vérifie qu'il ne soit pas vide*/
-    if (f == NULL)
+    if (f== NULL)
     {
         printf("Le fichier est vide");
+        exit(1);
     }
 
     while (fscanf(f,"%s %d",nom, &codep) != EOF){
