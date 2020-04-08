@@ -24,8 +24,9 @@ Liste liste_teteinserer(Liste l, int e, char nom[TAILLE_NOM])
 /* Affichage de la liste */
 void liste_afficher(Liste l, int e){
     while (l != NULL) {
+        printf("%d\n",l->codep);
         if (l->codep==e){
-            printf("%d : %s\n",l->codep,l->nom);
+            printf("%s\n",l->nom);
         }
         l=l->suc;
     }
