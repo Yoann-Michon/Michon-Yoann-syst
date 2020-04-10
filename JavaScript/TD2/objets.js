@@ -6,7 +6,7 @@ function elements(t){
     let somme2 =t.reduce(sum);
     let moy=somme2/t.length;
 
-    var object={nbrElem: t.length,
+    let object={nbrElem: t.length,
         somme: somme2,
         moyenne: moy};
     return object;
@@ -18,9 +18,23 @@ function elements(t){
 //console.log(tab.moyenne)
 
 //2.2
-let etudiant={numero: "",
-                nom: "",
-                prenom: "",
-                dateNaiss: new Date(),
+let etudiant={numero: "12",
+                nom: "Jean",
+                prenom: "Pierre",
+                dateNaiss: new Date(1998,12,5),
                 mail: "",
-                notes: []};
+                notes: [],
+
+//2.3
+/*Calcul de l'age*/
+age()   {let auj= new Date();
+            let age=auj.getFullYear() - this.dateNaiss.getFullYear();
+            if (auj.getMonth()===this.dateNaiss.getMonth())
+                {if (auj.getDay>this.dateNaiss.getDay()) age-=1;}
+            else if(auj.getMonth()===this.dateNaiss.getMonth()){age-=1;}
+        },
+
+informationsEtud() {
+
+                    }
+};
