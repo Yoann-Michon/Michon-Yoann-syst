@@ -93,7 +93,7 @@ etudiants.prototype.moyenne=function(){
 function annniversaire(t,num){
     let tab=[];
     for (let i=0;i<=t.length;i++){
-        if (t.numero===num){
+        if (t.dateNaiss.getMonth()===num){
             tab.push(t[i]);
         }
     }
