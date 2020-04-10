@@ -5,10 +5,12 @@
 
 int main() {
     Liste l;
-    l = ouverture_fichier();
+    l = ouverture_fichier();/*
     for (int i=0 ; i<=49100 ; i++)  {
         liste_afficher(l, i);
     }
-    l = liste_liberer(l);
-}
+    l = liste_liberer(l);*/
 
+    printf("Doit afficher :\n");
+    liste_afficher(l,54000);
+}

@@ -53,3 +53,68 @@ moyenne(){
     return somme/this.notes.length;
         }
 };
+
+//2.6
+/*constructeur etudiant*/
+function etudiants(nom,prenom,dateNaiss,mail){
+    this.nom=nom;
+    this.prenom=prenom;
+    this.dateNaiss=dateNaiss;
+    this.mail=mail;
+    this.notes=[];
+}
+
+etudiants.prototype.age=function () {
+    let auj= new Date();
+    let age=auj.getFullYear() - this.dateNaiss.getFullYear();
+    if (auj.getMonth()===this.dateNaiss.getMonth())
+        {if (auj.getDay>this.dateNaiss.getDay()) age-=1;}
+    else if(auj.getMonth()===this.dateNaiss.getMonth()){age-=1;}
+    return age;
+};
+
+etudiants.prototype.info=function(){
+    let jour=this.dateNaiss.getDay();
+    let mois=this.dateNaiss.getMonth();
+    let annee=this.dateNaiss.getFullYear();
+    let dateNaissance=jour+"/"+mois+"/"+annee;
+    return this.nom.toUpperCase() +"\n"+this.prenom+"\n"+dateNaissance;
+};
+
+etudiants.prototype.note=function(mat,n){ this.notes.push({matiere : mat, note:n})};
+
+etudiants.prototype.moyenne=function(){
+    let somme=0;
+    this.notes.forEach(n=>somme+=n.notes);
+    return somme/this.notes.length;
+    };
+
+//2.7
+function annniversaire(t,num){
+    let tab=[];
+    for (let i=0;i<=t.length;i++){
+        if (t.numero===num){
+            tab.push(t[i]);
+        }
+    }
+    return tab;
+}
+
+//2.8
+function triAge(t,n){
+    let tab=[];
+    for (let i=0;i<=t.length;i++){
+        if (t.age>n){
+            tab.push(t[i]);
+        }
+    }
+    return tab;
+}
+
+//2.9
+function grpEtud(nom,nformation,tab,annee){
+    this.nomgpe=nom;
+    this.formation=nformation;
+    this.liste=tab;
+    this.annee=annee;
+}
