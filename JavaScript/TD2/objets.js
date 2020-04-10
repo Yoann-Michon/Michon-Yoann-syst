@@ -118,3 +118,30 @@ function grpEtud(nom,nformation,tab,annee){
     this.liste=tab;
     this.annee=annee;
 }
+
+//2.10
+grpEtud.prototype.ajoutEtud=function(nomEtud,nomgrp){
+    if (nomgrp===this.nomgpe){
+        this.liste.push(nomEtud);
+    }
+    return this.liste;
+};
+
+grpEtud.prototype.compter=function(){
+    return this.liste.length;
+};
+
+grpEtud.prototype.moyGen=function () {
+    for(let i=0;i<=this.liste.length;i++){
+        return this.liste[i].moyenne;
+    }
+};
+
+//2.11
+grpEtud.prototype.bonus=function(n,mat){
+    for (let i=0;i<=this.liste.length;i++){
+        if (this.liste[i].dateNaiss.getMonth()===n){
+
+        }
+    }
+}
