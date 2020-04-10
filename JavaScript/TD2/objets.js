@@ -34,11 +34,22 @@ age()   {let auj= new Date();
             else if(auj.getMonth()===this.dateNaiss.getMonth()){age-=1;}
         },
 
+/*retourne des informations sur l'étudiant*/
 informationsEtud() {
                     let jour=this.dateNaiss.getDay();
                     let mois=this.dateNaiss.getMonth();
                     let annee=this.dateNaiss.getFullYear();
                     let dateNaissance=jour+"/"+mois+"/"+annee;
                     return this.nom.toUpperCase() +"\n"+this.prenom+"\n"+dateNaissance;
-                    }
+                    },
+//2.4
+/*ajoute une note avec le nom de la matière*/
+note(mat,n){ this.notes.push({matiere : mat, note:n})},
+
+//2.5
+moyenne(){
+    let somme=0;
+    this.notes.forEach(n=>somme+=n.notes);
+    return somme/this.notes.length;
+        }
 };
