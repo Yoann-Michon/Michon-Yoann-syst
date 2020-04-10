@@ -35,6 +35,10 @@ age()   {let auj= new Date();
         },
 
 informationsEtud() {
-
+                    let jour=this.dateNaiss.getDay();
+                    let mois=this.dateNaiss.getMonth();
+                    let annee=this.dateNaiss.getFullYear();
+                    let dateNaissance=jour+"/"+mois+"/"+annee;
+                    return this.nom.toUpperCase() +"\n"+this.prenom+"\n"+dateNaissance;
                     }
 };
