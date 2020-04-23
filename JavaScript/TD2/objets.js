@@ -18,11 +18,11 @@ function elements(t){
 //console.log(tab.moyenne)
 
 //2.2
-let etudiant={numero: "12",
-                nom: "Jean",
-                prenom: "Pierre",
-                dateNaiss: new Date(1998,12,5),
-                mail: "",
+let etudiant={numero: 1,
+                nom: "LAMOUR",
+                prenom: "Jean",
+                dateNaiss: new Date(1998,1,5, 11,33,0),
+                mail: "jean.lamour@yopmail.com",
                 notes: [],
 
 //2.3
@@ -32,6 +32,7 @@ age()   {let auj= new Date();
             if (auj.getMonth()===this.dateNaiss.getMonth())
                 {if (auj.getDay>this.dateNaiss.getDay()) age-=1;}
             else if(auj.getMonth()===this.dateNaiss.getMonth()){age-=1;}
+            return age;
         },
 
 /*retourne des informations sur l'étudiant*/
@@ -44,25 +45,40 @@ informationsEtud() {
                     },
 //2.4
 /*ajoute une note avec le nom de la matière*/
-note(mat,n){ this.notes.push({matiere : mat, note:n})},
+ajoutNote(mat,n){ this.notes.push({matiere : mat, note:n})},
 
 //2.5
 moyenne(){
     let somme=0;
-    this.notes.forEach(n=>somme+=n.notes);
+    this.notes.forEach(n=>somme+=n.note);
     return somme/this.notes.length;
         }
-};
+};/*----------Test----------*/
+/*console.log("\n Etudiant numero : " + etudiant.numero +"\n nom : " + etudiant.nom +
+    "\n prenom : " + etudiant.prenom + "\n dateNaiss : " + etudiant.dateNaiss +
+    "\n mail : " + etudiant.mail +"\n notes : " + etudiant.notes);*/
+//console.log("age : " + etudiant.age());
+//console.log("Information : \n" + etudiant.informationsEtud());
+// etudiant.ajoutNote('Philo', 14);
+// etudiant.ajoutNote('Francais', 9);
+//console.log("moyenne : "+etudiant.moyenne());
+
+
 
 //2.6
 /*constructeur etudiant*/
-function etudiants(nom,prenom,dateNaiss,mail){
+function etudiants(numero,nom,prenom,dateNaiss,mail){
+    this.numero=numero;
     this.nom=nom;
     this.prenom=prenom;
     this.dateNaiss=dateNaiss;
     this.mail=mail;
     this.notes=[];
-}
+}/*----------Test----------*/
+/*let etu = new etudiants(2, "JEAN", "LAMOUR", "10/05/1956", "jean.dilong@yopmail.com")
+console.log("etudiant numero : " + etu.numero + "\n nom : " + etu.nom +
+        "\n prenom : " + etu.prenom + "\n dateNaiss : " + etu.dateNaiss +
+        "\n mail : " + etu.mail + "\n notes : " + etu.notes);*/
 
 etudiants.prototype.age=function () {
     let auj= new Date();
@@ -71,7 +87,7 @@ etudiants.prototype.age=function () {
         {if (auj.getDay>this.dateNaiss.getDay()) age-=1;}
     else if(auj.getMonth()===this.dateNaiss.getMonth()){age-=1;}
     return age;
-};
+};/*----------Test----------*/
 
 etudiants.prototype.info=function(){
     let jour=this.dateNaiss.getDay();
@@ -79,15 +95,16 @@ etudiants.prototype.info=function(){
     let annee=this.dateNaiss.getFullYear();
     let dateNaissance=jour+"/"+mois+"/"+annee;
     return this.nom.toUpperCase() +"\n"+this.prenom+"\n"+dateNaissance;
-};
+};/*----------Test----------*/
 
 etudiants.prototype.note=function(mat,n){ this.notes.push({matiere : mat, note:n})};
+/*----------Test----------*/
 
 etudiants.prototype.moyenne=function(){
     let somme=0;
     this.notes.forEach(n=>somme+=n.notes);
     return somme/this.notes.length;
-    };
+};/*----------Test----------*/
 
 //2.7
 function annniversaire(t,num){
@@ -98,7 +115,7 @@ function annniversaire(t,num){
         }
     }
     return tab;
-}
+}/*----------Test----------*/
 
 //2.8
 function triAge(t,n){
@@ -109,7 +126,7 @@ function triAge(t,n){
         }
     }
     return tab;
-}
+}/*----------Test----------*/
 
 //2.9
 function grpEtud(nom,nformation,tab,annee){
@@ -144,4 +161,4 @@ grpEtud.prototype.bonus=function(n,mat){
 
         }
     }
-}
+};

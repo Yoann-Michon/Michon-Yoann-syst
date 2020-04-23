@@ -8,7 +8,7 @@ function range(a, b){
         tab.push(i);
     }
     return tab;
-}
+}/*-------Test-------*/
 //console.log("de 1 à 5 : "+ range(1,5));
 //console.log("de 1 à 5 : "+ range(5,1));
 //console.log("de 1 à 20 : "+ range(1,20));
@@ -20,20 +20,20 @@ function sum(tab){
         somme+=tab[i];
     }
     return somme;
-}
+}/*-------Test-------*/
 //console.log("tab[1,2,3] = 6 : "+ sum([1,2,3]));
 
 function sum2(tab){
     let somme=0;
     tab.forEach(tab=>somme+=tab);
     return somme;
-}
+}/*-------Test-------*/
 //console.log("tab[1,2,3] = 6 : "+ sum2([1,2,3]));
 
 function sum3(tab){
     let somme=(accumulator, currentValue) => accumulator + currentValue;
     return tab.reduce(somme);
-}
+}/*-------Test-------*/
 //console.log("tab[1,2,3] = 6 : "+ sum3([1,2,3]));
 
 //1.3
@@ -45,7 +45,7 @@ function moyenne(tab){
         moy=somme/tab.length;
     }
     return moy;
-}
+}/*-------Test-------*/
 //console.log("moyenne de 2: "+moyenne([1,2,3]));
 //console.log("moyenne de 2: "+moyenne([11,22,33]));
 
@@ -54,7 +54,7 @@ function moyenne2(tab){
     tab.forEach(tab=>somme+=tab);
     let moy=somme/tab.length;
     return moy;
-}
+}/*-------Test-------*/
 //console.log("moyenne de 2: "+moyenne2([1,2,3]));
 //console.log("moyenne de 2: "+moyenne2([11,22,33]));
 
@@ -63,7 +63,7 @@ function moyenne3(tab){
     let somme=(accumulator, currentValue) => accumulator + currentValue;
     moy=tab.reduce(somme)/tab.length;
     return moy;
-}
+}/*-------Test-------*/
 //console.log("moyenne de 2: "+moyenne3([1,2,3]));
 //console.log("moyenne de 2: "+moyenne3([11,22,33]));
 
@@ -75,7 +75,7 @@ function pattern(t, str){
                       res.push(a.toUpperCase());
                     }});
     return res;
-}
+}/*-------Test-------*/
 //let tab = ['fermeture', 'voiture', 'ture', 'nomenclature', 'coco'];
 //console.log(pattern(tab,'ture'));
 
@@ -92,7 +92,7 @@ function pattern2(t, testFnct, transFnct){
 //1.6
 function pattern3(t, str){
     return t.filter(t=>t.includes(str)).map(t=>t.toUpperCase());
-}
+}/*-------Test-------*/
 //let tab = ['fermeture', 'voiture', 'ture', 'nomenclature', 'coco'];
 //console.log(pattern3(tab,'ture'));
 
@@ -103,7 +103,7 @@ function url(t){
         tab.push("http://www.cata.log/products/"+t[i])
     }
     return tab;
-}
+}/*-------Test-------*/
 //console.log("renvoie l'url de chaque produit : "+url([1,2,3,4,5]));
 
 //1.8
@@ -115,5 +115,5 @@ function url2(t){
     }
     html+="\n</ul> </div>";
     return html;
-}
+}/*-------Test-------*/
 //console.log(url2(['downers1','uppers2','trips3','aphrodisiques4','dope5']));
