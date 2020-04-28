@@ -37,6 +37,11 @@ function clearList(obj){
     //for (let i=1;i<taille;i++){listElement.lastElementChild.remove()}
 }
 
+function incrInputValue(obj){
+    let count=document.getElementById('ex4i');
+    count.value +=1;
+}
+
 //fonction principale
 window.addEventListener("load",()=>{
 
@@ -56,5 +61,10 @@ window.addEventListener("load",()=>{
         clearList(event);
     });
 
+    let ex4=document.querySelector("#ex4b");
+    ex3.addEventListener("click", (event) => {
+        //test 5
+        incrInputValue(event);
+    });
 
 });
