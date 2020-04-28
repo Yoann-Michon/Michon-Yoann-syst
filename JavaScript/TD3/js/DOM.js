@@ -19,10 +19,22 @@ function updateButtonClass(obj){
             }
 }
 
+/*fonction qui insère 1 item à la liste*/
 function ajoutItem(obj){
     let listElement=document.getElementById('ex2');
     let taille =listElement.getElementsByTagName("li").length;
     listElement.innerHTML += "<li>click bouton : "+taille+"</li>" ;
+}
+
+function clearList(obj){
+    let listElement=document.getElementById('ex2');
+    //Suppresion des items 1 par 1
+    let li =listElement.getElementsByTagName("li");
+    for (let i=1;i<li.length;i++){listElement.lastElementChild.remove()}
+
+    //Suppresion de la liste entière
+    //let taille =listElement.getElementsByTagName("li").length;
+    //for (let i=1;i<taille;i++){listElement.lastElementChild.remove()}
 }
 
 //fonction principale
@@ -37,5 +49,12 @@ window.addEventListener("load",()=>{
         //test 3
         ajoutItem(event);
     });
+
+    let ex3=document.querySelector("#ex3");
+    ex3.addEventListener("click", (event) => {
+        //test 4
+        clearList(event);
+    });
+
 
 });
