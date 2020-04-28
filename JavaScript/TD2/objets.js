@@ -54,33 +54,40 @@ moyenne(){
     return somme/this.notes.length;
         }
 };/*----------Test----------*/
-/*console.log("\n Etudiant numero : " + etudiant.numero +"\n nom : " + etudiant.nom +
+/** console.log("\n Etudiant numero : " + etudiant.numero +"\n nom : " + etudiant.nom +
     "\n prenom : " + etudiant.prenom + "\n dateNaiss : " + etudiant.dateNaiss +
-    "\n mail : " + etudiant.mail +"\n notes : " + etudiant.notes);*/
-//console.log("age : " + etudiant.age());
-//console.log("Information : \n" + etudiant.informationsEtud());
-// etudiant.ajoutNote('Philo', 14);
-// etudiant.ajoutNote('Francais', 9);
-//console.log("moyenne : "+etudiant.moyenne());
+    "\n mail : " + etudiant.mail +"\n notes : " + etudiant.notes);
+    console.log("age : " + etudiant.age());
+    console.log("Information : \n" + etudiant.informationsEtud());
+    etudiant.ajoutNote('Philo', 14);
+    etudiant.ajoutNote('Francais', 9);
+    console.log("moyenne : "+etudiant.moyenne());   */
 
 
 
 //2.6
 /*constructeur etudiant*/
 function etudiants(numero,nom,prenom,dateNaiss,mail){
-    let separateur=dateNaiss.split("/");
+    /* rappel :
+     *  split() permet de recuperer
+     *  les elements d'une chaine de
+     *  caractere sous forme de tableau
+    */
+    let sep=dateNaiss.split("/");
 
     this.numero=numero;
     this.nom=nom;
     this.prenom=prenom;
-    this.dateNaiss=dateNaiss;
+    this.dateNaiss=new Date(sep[2],sep[1],sep[0]);
     this.mail=mail;
     this.notes=[];
 }/*----------Test----------*/
-/*let etu = new etudiants(2, "JEAN", "LAMOUR", "10/05/1956", "jean.dilong@yopmail.com")
-console.log("etudiant numero : " + etu.numero + "\n nom : " + etu.nom +
+/** let etu = new etudiants(2, "JEAN", "LAMOUR", "01/05/1956", "jean.dilong@yopmail.com")
+ * let etu2 = new etudiants(3, "JEAN", "Charles", "16/11/1957", "jean.savaitrien@yopmail.com");
+ * let etu3 = new etudiants(1, "FLEURY", "Michon", "12/01/1953", "fleury@yopmail.com");
+    console.log("etudiant numero : " + etu.numero + "\n nom : " + etu.nom +
         "\n prenom : " + etu.prenom + "\n dateNaiss : " + etu.dateNaiss +
-        "\n mail : " + etu.mail + "\n notes : " + etu.notes);*/
+        "\n mail : " + etu.mail + "\n notes : " + etu.notes);   */
 
 etudiants.prototype.age=function () {
     let auj= new Date();
@@ -109,39 +116,44 @@ etudiants.prototype.info=function(){
     let dateNaissance=jour+"/"+mois+"/"+annee;
     return this.nom.toUpperCase() +"\n"+this.prenom+"\n"+dateNaissance;
 };/*----------Test----------*/
-//console.log("info : " + etu.info());
+//console.log("info : \n" + etu.info());
 
 etudiants.prototype.note=function(mat,n){ this.notes.push({matiere : mat, note:n})};
 /*----------Test----------*/
+/** etu.note('Java', 14);
+    etu.note('Anglais', 9);
+    console.log("matiere : "+ etu.notes[0].matiere +"\n note : "+etu.notes[0].note);
+    console.log("matiere : "+ etu.notes[1].matiere +"\n note : "+etu.notes[1].note); */
+
 
 etudiants.prototype.moyenne=function(){
     let somme=0;
-    this.notes.forEach(n=>somme+=n.notes);
+    for (let i=0; i<this.notes.length;i++){
+        somme+=this.notes[i].note;
+    }
     return somme/this.notes.length;
-};/*----------Test----------*/
+}/*----------Test----------*/
+//  console.log("moyenne : "+etu.moyenne());
 
 //2.7
 function anniversaire(t,num){
     let tab=[];
-    for (let i=0;i<=t.length;i++){
-        if (t.dateNaiss.getMonth()===num){
-            tab.push(t[i]);
-        }
-    }
+    t.forEach(etu=>{if (etu.dateNaiss.getMonth()+1===num)tab.push(etu.prenom);})
     return tab;
 }/*----------Test----------*/
-
+/*  console.log("mois : "+ anniversaire([etu,etu2,etu3],11)); */
 
 //2.8
 function triAge(t,n){
     let tab=[];
     for (let i=0;i<=t.length;i++){
-        if (t.age>n){
+        if (t[i].age>n){
             tab.push(t[i]);
         }
     }
     return tab;
 }/*----------Test----------*/
+// console.log(triAge([etu,etu2,etu3],25));
 
 //2.9
 function grpEtud(nom,nformation,tab,annee){
@@ -149,35 +161,29 @@ function grpEtud(nom,nformation,tab,annee){
     this.formation=nformation;
     this.liste=tab;
     this.annee=annee;
-}
+}/*----------Test----------*/
+/** let grp = new grpEtud("Lol", "Video", [etu, etu2, etu3], 2015);
+    console.log("nomgpe : " + grp.nomgpe + "\n formation : " + grp.formation +
+ "\n liste : " + grp.liste + "\n année : " + grp.annee); */
 
 //2.10
-grpEtud.prototype.ajoutEtud=function(nomEtud,nomgrp){
-    if (nomgrp===this.nomgpe){
-        this.liste.push(nomEtud);
-    }
-    return this.liste;
-};
+grpEtud.prototype.ajoutEtud=function(etu){
+    this.liste.push(etu);
+};/*----------Test----------*/
+/** let etu4 = new etudiants(4, "Landjet", "Marainou", "20/05/1965", "landjet.marainou@yopmail.com");
+ *  let grp = new grpEtud("Lol", "Video", [etu, etu2, etu3], 2015);
+ *  console.log(grp.ajoutEtud(etu4.nom));
+ */
 
 grpEtud.prototype.compter=function(){
     return this.liste.length;
-};
+};/*----------Test----------*/
+//  console.log(grp.compter());
 
 grpEtud.prototype.moyGen=function () {
     for(let i=0;i<=this.liste.length;i++){
         return this.liste[i].moyenne;
     }
-};
-
-//2.11
-grpEtud.prototype.bonus=function(n,mat){
-    for (let i=0;i<=this.liste.length;i++){
-        if (this.liste[i].dateNaiss.getMonth()===n){
-
-        }
-    }
-};
+};/*----------Test----------*/
 
 
-let etu2 = new etudiants(3, "JEAN", "Charles", "16/11/1957", "jean.savaitrien@yopmail.com");
-let etu3 = new etudiants(1, "FLEURY", "Michon", "12/01/1953", "fleury@yopmail.com");
