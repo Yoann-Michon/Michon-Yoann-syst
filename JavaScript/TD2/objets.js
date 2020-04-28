@@ -68,6 +68,8 @@ moyenne(){
 //2.6
 /*constructeur etudiant*/
 function etudiants(numero,nom,prenom,dateNaiss,mail){
+    let separateur=dateNaiss.split("/");
+
     this.numero=numero;
     this.nom=nom;
     this.prenom=prenom;
@@ -82,12 +84,23 @@ console.log("etudiant numero : " + etu.numero + "\n nom : " + etu.nom +
 
 etudiants.prototype.age=function () {
     let auj= new Date();
-    let age=auj.getFullYear() - this.dateNaiss.getFullYear();
-    if (auj.getMonth()===this.dateNaiss.getMonth())
-        {if (auj.getDay>this.dateNaiss.getDay()) age-=1;}
-    else if(auj.getMonth()===this.dateNaiss.getMonth()){age-=1;}
+
+    let jour=this.dateNaiss.getDay();
+    let mois=this.dateNaiss.getMonth();
+    let annee=this.dateNaiss.getFullYear();
+
+    let nJour=auj.getDay();
+    let nMois=auj.getMonth()+1;
+    let nAnnee=auj.getFullYear();
+    let age= nAnnee - annee;
+
+    if (nMois===mois)
+        {if (nJour>jour) age-=1;}
+    else if(nMois===mois){age-=1;}
     return age;
 };/*----------Test----------*/
+//console.log("age : " + etu.age());
+
 
 etudiants.prototype.info=function(){
     let jour=this.dateNaiss.getDay();
@@ -96,6 +109,7 @@ etudiants.prototype.info=function(){
     let dateNaissance=jour+"/"+mois+"/"+annee;
     return this.nom.toUpperCase() +"\n"+this.prenom+"\n"+dateNaissance;
 };/*----------Test----------*/
+//console.log("info : " + etu.info());
 
 etudiants.prototype.note=function(mat,n){ this.notes.push({matiere : mat, note:n})};
 /*----------Test----------*/
@@ -107,7 +121,7 @@ etudiants.prototype.moyenne=function(){
 };/*----------Test----------*/
 
 //2.7
-function annniversaire(t,num){
+function anniversaire(t,num){
     let tab=[];
     for (let i=0;i<=t.length;i++){
         if (t.dateNaiss.getMonth()===num){
@@ -116,6 +130,7 @@ function annniversaire(t,num){
     }
     return tab;
 }/*----------Test----------*/
+
 
 //2.8
 function triAge(t,n){
@@ -162,3 +177,7 @@ grpEtud.prototype.bonus=function(n,mat){
         }
     }
 };
+
+
+let etu2 = new etudiants(3, "JEAN", "Charles", "16/11/1957", "jean.savaitrien@yopmail.com");
+let etu3 = new etudiants(1, "FLEURY", "Michon", "12/01/1953", "fleury@yopmail.com");
