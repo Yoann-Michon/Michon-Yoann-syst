@@ -184,6 +184,6 @@ grpEtud.prototype.moyGen=function () {
 
     let tab=[];
     this.liste.forEach(etu=>{tab.push(etu.moyenne());});
-    return tab;
+    return tab
 };/*----------Test----------*/
 //console.log(grp.moyGen());
