@@ -82,9 +82,9 @@ function etudiants(numero,nom,prenom,dateNaiss,mail){
     this.mail=mail;
     this.notes=[];
 }/*----------Test----------*/
-/** let etu = new etudiants(2, "JEAN", "LAMOUR", "01/05/1956", "jean.dilong@yopmail.com")
- * let etu2 = new etudiants(3, "JEAN", "Charles", "16/11/1957", "jean.savaitrien@yopmail.com");
- * let etu3 = new etudiants(1, "FLEURY", "Michon", "12/01/1953", "fleury@yopmail.com");
+/** let etu = new etudiants(2, "JEAN", "LAMOUR", "01/05/1956", "jean.dilong@yopmail.com");
+    let etu2 = new etudiants(3, "JEAN", "Charles", "16/11/1957", "jean.savaitrien@yopmail.com");
+    let etu3 = new etudiants(1, "FLEURY", "Michon", "12/01/1953", "fleury@yopmail.com");
     console.log("etudiant numero : " + etu.numero + "\n nom : " + etu.nom +
         "\n prenom : " + etu.prenom + "\n dateNaiss : " + etu.dateNaiss +
         "\n mail : " + etu.mail + "\n notes : " + etu.notes);   */
@@ -141,7 +141,7 @@ function anniversaire(t,num){
     t.forEach(etu=>{if (etu.dateNaiss.getMonth()+1===num)tab.push(etu.prenom);})
     return tab;
 }/*----------Test----------*/
-/*  console.log("mois : "+ anniversaire([etu,etu2,etu3],11)); */
+//  console.log("mois : "+ anniversaire([etu,etu2,etu3],11));
 
 //2.8
 function triAge(t,n){
@@ -162,7 +162,7 @@ function grpEtud(nom,nformation,tab,annee){
     this.liste=tab;
     this.annee=annee;
 }/*----------Test----------*/
-/** let grp = new grpEtud("Lol", "Video", [etu, etu2, etu3], 2015);
+/** let grp = new grpEtud("Lol", "Jeu", [etu, etu2, etu3], 2015);
     console.log("nomgpe : " + grp.nomgpe + "\n formation : " + grp.formation +
  "\n liste : " + grp.liste + "\n année : " + grp.annee); */
 
@@ -171,19 +171,19 @@ grpEtud.prototype.ajoutEtud=function(etu){
     this.liste.push(etu);
 };/*----------Test----------*/
 /** let etu4 = new etudiants(4, "Landjet", "Marainou", "20/05/1965", "landjet.marainou@yopmail.com");
- *  let grp = new grpEtud("Lol", "Video", [etu, etu2, etu3], 2015);
- *  console.log(grp.ajoutEtud(etu4.nom));
+    let grp = new grpEtud("Lol", "Video", [etu, etu2, etu3], 2015);
+    console.log(grp.ajoutEtud(etu4.nom));
  */
 
 grpEtud.prototype.compter=function(){
     return this.liste.length;
 };/*----------Test----------*/
-//  console.log(grp.compter());
+//  console.log("nombre d'étudiants : "+grp.compter());
 
 grpEtud.prototype.moyGen=function () {
-    for(let i=0;i<=this.liste.length;i++){
-        return this.liste[i].moyenne;
-    }
+
+    let tab=[];
+    this.liste.forEach(etu=>{tab.push(etu.moyenne());});
+    return tab;
 };/*----------Test----------*/
-
-
+//console.log(grp.moyGen());
